@@ -11,9 +11,12 @@ Pessoa p2 = new Pessoa(nome: "Hóspede 2");
 
 hospedes.Add(p1);
 hospedes.Add(p2);
+hospedes.Add(p1);
+
+// coloquei mais um hospede para testar a excessao e deu certo
 
 // Cria a suíte
-Suite suite = new Suite(tipoSuite: "Premium", capacidade: 2, valorDiaria: 30);
+Suite suite = new Suite(tipoSuite: "Premium", capacidade: 3, valorDiaria: 30);
 
 // Cria uma nova reserva, passando a suíte e os hóspedes
 Reserva reserva = new Reserva(diasReservados: 5);
